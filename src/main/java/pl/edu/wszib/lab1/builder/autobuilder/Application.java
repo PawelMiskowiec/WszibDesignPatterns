@@ -23,5 +23,6 @@ public class Application {
         System.out.println(Person.female());
         System.out.println(Person.male());
         System.out.println(ja);
+
     }
 }
