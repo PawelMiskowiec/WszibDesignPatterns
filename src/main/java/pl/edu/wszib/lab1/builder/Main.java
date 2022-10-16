@@ -2,14 +2,15 @@ package pl.edu.wszib.lab1.builder;
 
 public class Main {
     public static void main(String[] args) {
-        Address address = Address.builder()
-                .setCity("Krakow")
-                .setHomeNo("14")
-                .setPostCode("69-420")
-                .setStreet("Aleja Kijowska")
-                .build();
         Person person = Person.builder()
-                .setAddress(address)
+                .setAddress(
+                        Address.builder()
+                                .setCity("Krakow")
+                                .setHomeNo("14")
+                                .setPostCode("69-420")
+                                .setStreet("Aleja Kijowska")
+                                .build()
+                )
                 .setGender("brak")
                 .setFirstName("Pawel")
                 .setLastName("Miskowiec")
